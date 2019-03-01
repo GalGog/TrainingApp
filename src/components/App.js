@@ -6,12 +6,14 @@ import Comment from "./Comment";
 import faker from 'faker';
 import ApprovalCard from './ApprovalCard'
 import ShowAlert from './ShowAlert'
+import ChangeInput from "./ChangeInput";
 
 const App = () => {
     return (
         <div>
             App
             <List list="Perto"/>
+            <hr/>
             <Welcome name="Sara" />
 
                 <Comment
@@ -22,7 +24,7 @@ const App = () => {
                     avatar="avatar"
                 />
 
-
+            <hr/>
 
                 <ApprovalCard >
                     <Comment
@@ -33,9 +35,13 @@ const App = () => {
                         avatar="avatar"
                     />
             </ApprovalCard>
-
+            <hr/>
             <Clock />
+            <hr/>
             <ShowAlert />
+            <hr/>
+            <ChangeInput />
+            <hr/>
 
         </div>
 
